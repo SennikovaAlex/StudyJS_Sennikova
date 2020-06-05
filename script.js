@@ -8,6 +8,7 @@ let period = 12;
 console.log(typeof money, typeof income, typeof deposit);
 console.log(addExpenses.length);
 console.log('Период равен ' + period + ' месяцев');
+console.log('Цель заработать ' + mission + ' рублей');
 
 addExpenses = addExpenses.toLowerCase();
 addExpenses = addExpenses.split(', ');
