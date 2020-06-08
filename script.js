@@ -1,20 +1,7 @@
 'use strict'
 
-//let income = 'Фриланс';
-//let period = 12;
-
-/*console.log(typeof money, typeof income, typeof deposit);
-console.log(addExpenses.length);
-console.log('Период равен ' + period + ' месяцев');
-console.log('Цель заработать ' + mission + ' рублей');
-
-addExpenses = addExpenses.toLowerCase();
-addExpenses = addExpenses.split(', ');
-console.log(typeof addExpenses);
-console.log(addExpenses);*/
-
-//let budgetDay = money/30; 
-//console.log(Math.round(budgetDay));
+let income = 'Фриланс';
+let period = 12;
 let mission = 1000000; 
 let money = prompt('Ваш месячный доход?', '80000'); 
 let addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую', 'Например: Интернет, телефон'); 
@@ -24,7 +11,19 @@ let amount1 = prompt('Во сколько это обойдется?', '30000');
 let expenses2 = prompt('Введите  еще одну обязательную статью расходов?', 'оплата счетов'); 
 let amount2 = prompt('Во сколько это обойдется?', '1000'); 
 
+console.log(typeof money, typeof income, typeof deposit);
+console.log(addExpenses.length);
+
+console.log('Период равен ' + period + ' месяцев');
+console.log('Цель заработать ' + mission + ' рублей');
+
+addExpenses = addExpenses.toLowerCase();
+addExpenses = addExpenses.split(', ');
+console.log(typeof addExpenses);
+console.log(addExpenses);
+
 let budgetMonth = money - amount1 - amount2;
+console.log('Ваш бюджет на месяц: ' + budgetMonth);
 
 console.log('Ваша цель будет достигнута через ' + Math.ceil(mission/budgetMonth) + 
 ' месяцев, если вы не будете никуда тратить деньги и кушать только мамины пирожки');
@@ -33,7 +32,8 @@ console.log('Ваша цель будет достигнута через ' + Ma
 }
 */
 let budgetDay = Math.floor(budgetMonth/30);
-// console.log(budgetDay);
+
+console.log('Ваш дневной бюджет: ' + budgetDay);
 // console.log(budgetMonth);
 
 if (budgetDay >= 1200 ) {
