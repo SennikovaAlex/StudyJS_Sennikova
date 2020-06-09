@@ -38,7 +38,7 @@ console.log('Ваш месячный бюджет с учетом обязате
 function getTargetMonth() {
     return mission/accumulatedMonth;
 }
-console.log('ваша цель будет достигнута через ' + Math.ceil(getTargetMonth()) + ' день');
+console.log('ваша цель будет достигнута через ' + Math.ceil(getTargetMonth()) + ' месяцев, если вы не будете никуда тратить деньги и кушать только мамины пирожки');
 
 let budgetDay = Math.floor(accumulatedMonth/30);
 
@@ -61,11 +61,8 @@ addExpenses = addExpenses.split(', ');
 //console.log(typeof addExpenses);
 console.log(addExpenses);
 
-//let budgetMonth = money - amount1 - amount2;
-//console.log('Ваш бюджет на месяц: ' + budgetMonth);
 
-//console.log('Ваша цель будет достигнута через ' + Math.ceil(mission/budgetMonth) + 
-//' месяцев, если вы не будете никуда тратить деньги и кушать только мамины пирожки');
+
 
 
 
