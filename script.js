@@ -28,7 +28,7 @@ let start = function() {
 
 start();
 
-do { money = prompt('Ваш месячный доход?'); } while (!isNumber(money));
+
 
 let ShowTypeOf = function(data) {
     console.log(data, typeof data);    
