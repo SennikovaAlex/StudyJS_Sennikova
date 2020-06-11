@@ -17,16 +17,16 @@ let amount2 = prompt('Во сколько это обойдется?', '1000'); 
 //console.log(addExpenses.length);
 console.log('Период равен ' + period + ' месяцев');
 console.log('Цель заработать ' + mission + ' рублей');
-
- /* let start = function() {
-    money = prompt('Ваш месячный доход?');
+ 
+let start = function() {
+   // money = prompt('Ваш месячный доход?');
     //while (isNaN(money) || money.trim() === '' || money === null) {
-        while (/*isNaN(parseFloat(money)) !isNumber(money)){
-        money = prompt('Ваш месячный доход?');
-    }
+        //while (/*isNaN(parseFloat(money)) !isNumber(money)){
+       // money = prompt('Ваш месячный доход?');}
+    do { money = prompt('Ваш месячный доход?'); } while (!isNumber(money));
 };
 
-start();*/
+start();
 
 do { money = prompt('Ваш месячный доход?'); } while (!isNumber(money));
 
